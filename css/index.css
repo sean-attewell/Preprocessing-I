@@ -178,7 +178,12 @@ html {
   border: 1px double black;
   background: #5c5a56;
   width: 20%;
+  padding: 15px 0;
   cursor: pointer;
+}
+.container .section1 button:hover {
+  background-color: #D9D9D9;
+  color: #5c5a56;
 }
 .container .section2 {
   display: flex;
@@ -190,12 +195,22 @@ html {
 .container .section2 .listenup {
   width: 45%;
 }
+@media (max-width: 500px) {
+  .container .section2 .listenup {
+    width: 70%;
+  }
+}
 .container .section2 h2 {
   padding-bottom: 10px;
   font-size: 2.4rem;
 }
 .container .section2 .stuffimgoodat {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .container .section2 .stuffimgoodat {
+    width: 70%;
+  }
 }
 .container .section2 h2 {
   padding-bottom: 10px;
@@ -208,6 +223,15 @@ html {
 }
 .container .section2 ul li:first-child {
   border-top: 1px solid #D9D9D9;
+}
+@media (max-width: 500px) {
+  .container .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+  }
 }
 .container .section3 {
   padding-bottom: 40px;
@@ -223,8 +247,11 @@ html {
 .container .section3 td {
   border-bottom: 1px solid #D9D9D9;
   border-collapse: collapse;
-  padding: 15px;
+  padding: 15px 0;
   text-align: left;
+}
+.container .section3 tr:nth-child(even) {
+  background-color: #f3f3f3;
 }
 .container footer {
   background-color: #D9D9D9;
