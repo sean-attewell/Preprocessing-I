@@ -57,4 +57,89 @@ html, body {
     height: 100%;
 }
 
+// ******************** MY CODE STARTS HERE ********************
 
+//variables
+
+@font-stack: Arial, sans-serif;
+
+@magic-percentage: 62.5%;
+
+@mobile-breakpoint: 500px;
+
+// color swatch
+@background-color: #D9D9D9;
+@foreground-color: rgb(92, 90, 86);
+
+
+//mixin it up
+.flex-mixin(@direction, @justify, @align) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+  }
+
+.headers-mixin() {
+	font-size: 2.4rem;
+
+}
+
+
+// Styling
+html {
+	font-family: @font-stack;
+	font-size: @magic-percentage;
+  }
+
+.container {
+	font-size: 1.6rem;
+	margin: 0 auto;
+	width: 95%;
+	max-width: 1000px;
+
+	header {
+		nav {
+			.flex-mixin(row, flex-end, center);
+			height: 40px;
+			a {
+				text-decoration: none;
+				color: @foreground-color;
+				padding-left: 2%;
+			}
+		}
+	}
+	.section1 {
+		.flex-mixin(column, space-around, flex-start);
+		background-color: @background-color;
+		height: 600px;
+		padding: 0 2%;
+		.genghiskhan {
+			width: 100%;
+			
+		}
+		h1 {
+			.headers-mixin();
+		}
+		button {
+			color: white;
+			font-size: 1.6rem;
+			border: 1px double black;
+			background: @foreground-color;
+			width: 20%;
+			height: 32px;
+			cursor: pointer;
+		}
+	}
+	.section2 {
+		.flex-mixin(row, space-between, center);
+		padding: 0 2%;
+		.listenup {
+			// width: 25%;
+		}
+		.stuffimgoodat {
+			// width: 25%;
+		}
+
+	}
+}

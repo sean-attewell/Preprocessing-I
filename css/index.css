@@ -134,3 +134,56 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+}
+.container {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px;
+}
+.container header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+}
+.container header nav a {
+  text-decoration: none;
+  color: #5c5a56;
+  padding-left: 2%;
+}
+.container .section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #D9D9D9;
+  height: 600px;
+  padding: 0 2%;
+}
+.container .section1 .genghiskhan {
+  width: 100%;
+}
+.container .section1 h1 {
+  font-size: 2.4rem;
+}
+.container .section1 button {
+  color: white;
+  font-size: 1.6rem;
+  border: 1px double black;
+  background: #5c5a56;
+  width: 20%;
+  height: 32px;
+  cursor: pointer;
+}
+.container .section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+}
