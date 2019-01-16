@@ -142,7 +142,7 @@ html {
   font-size: 1.6rem;
   margin: 0 auto;
   width: 95%;
-  max-width: 1000px;
+  max-width: 800px;
 }
 .container header nav {
   display: flex;
@@ -164,6 +164,7 @@ html {
   background-color: #D9D9D9;
   height: 600px;
   padding: 0 2%;
+  margin-bottom: 30px;
 }
 .container .section1 .genghiskhan {
   width: 100%;
@@ -177,13 +178,56 @@ html {
   border: 1px double black;
   background: #5c5a56;
   width: 20%;
-  height: 32px;
   cursor: pointer;
 }
 .container .section2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 2%;
+  align-items: flex-start;
+  height: 200px;
+}
+.container .section2 .listenup {
+  width: 45%;
+}
+.container .section2 h2 {
+  padding-bottom: 10px;
+  font-size: 2.4rem;
+}
+.container .section2 .stuffimgoodat {
+  width: 45%;
+}
+.container .section2 h2 {
+  padding-bottom: 10px;
+  font-size: 2.4rem;
+}
+.container .section2 ul li {
+  border: 1px solid #D9D9D9;
+  border-top: 0;
+  padding: 5px;
+}
+.container .section2 ul li:first-child {
+  border-top: 1px solid #D9D9D9;
+}
+.container .section3 {
+  padding-bottom: 40px;
+}
+.container .section3 h1 {
+  font-size: 2.4rem;
+  padding-bottom: 10px;
+}
+.container .section3 table {
+  width: 100%;
+}
+.container .section3 th,
+.container .section3 td {
+  border-bottom: 1px solid #D9D9D9;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: left;
+}
+.container footer {
+  background-color: #D9D9D9;
+  text-align: center;
+  padding: 35px 0;
 }
